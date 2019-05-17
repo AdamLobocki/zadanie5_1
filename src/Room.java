@@ -1,7 +1,15 @@
 public class Room {
-    double meters;
-    double temperature;
-    boolean airConditioner;
+  private   double meters;
+  private   double temperature;
+  private   boolean airConditioner;
+
+    public double getMeters() {
+        return meters;
+    }
+
+    public double getTemperature() {
+        return temperature;
+    }
 
     public Room(double meters, double temperature, boolean airConditioner) {
         this.meters = meters;
@@ -10,7 +18,7 @@ public class Room {
     }
 
     boolean cold(){
-        if(airConditioner == true && temperature > 15) {
+        if(airConditioner && temperature > 15) {
             temperature = temperature - 1;
             return true;
         }
@@ -19,7 +27,7 @@ public class Room {
 
     }
     void klima(){
-        if(airConditioner == true){
+        if(airConditioner){
             System.out.println("Tak ");
         }
         else

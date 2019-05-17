@@ -9,19 +9,19 @@ public class Test {
         boolean airConRoom3 = room3.cold();
         boolean airConRoom4 = room4.cold();
 
-        System.out.println("Pokuj nr1. Rozmiar: " + room1.meters + " Temperatura: " + room1.temperature +
+        System.out.println("Pokuj nr1. Rozmiar: " + room1.getMeters() + " Temperatura: " + room1.getTemperature() +
                 " \nKlimatyzacja: ");
         room1.klima();
         System.out.println("Czy klimatyzacja zadziałała: \n" + airConRoom1);
-        System.out.println("\nPokuj nr2. Rozmiar: " + room2.meters + " Temperatura: " + room2.temperature +
+        System.out.println("\nPokuj nr2. Rozmiar: " + room2.getMeters() + " Temperatura: " + room2.getTemperature() +
                 " \nKlimatyzacja: ");
         room2.klima();
         System.out.println("Czy klimatyzacja zadziałała: \n" + airConRoom2);
-        System.out.println("\nPokuj nr3. Rozmiar: " + room3.meters + " Temperatura: " + room3.temperature +
+        System.out.println("\nPokuj nr3. Rozmiar: " + room3.getMeters() + " Temperatura: " + room3.getTemperature()+
                 " \nKlimatyzacja: ");
         room3.klima();
         System.out.println("Czy klimatyzacja zadziałała: \n" + airConRoom3);
-        System.out.println("\nPokuj nr4. Rozmiar: " + room4.meters + " Temperatura: " + room4.temperature +
+        System.out.println("\nPokuj nr4. Rozmiar: " + room4.getMeters() + " Temperatura: " + room4.getTemperature() +
                 "\nKlimatyzacja: " );
         room4.klima();
         System.out.println( "Czy klimatyzacja zadziałała: \n" + airConRoom4);
